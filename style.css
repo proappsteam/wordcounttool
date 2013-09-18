@@ -1,0 +1,255 @@
+*{ 
+  font-family: tahoma; 
+  font-size: 98%; 
+}
+#wrapper{
+  width:99%;
+  margin: 0px auto;
+}
+#counter {
+  color: #FFFFFF;
+  font-size: 27px;
+  background-color: #C43C35;
+  padding: 5px;
+  border-radius: 5px;
+}
+#readability{
+  font-size: 14px;
+  color: #27F047;
+}
+.header{
+  background-color: #DAF7F6;
+  border-bottom:1px solid #009900;
+  margin:0;
+  padding:5px 10px;
+  font-weight:bold;
+}
+.box_container{
+  border: 1px solid #009900;
+  margin: 10px 0;
+  background-color: #eeffee;
+  line-height: 1.5;
+}
+#generation{
+  padding: 1px;
+  border: 1px solid #009900;
+  font-size:100%;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+#boxContainer{
+  width:69%;
+  height:100%;
+  float:left;
+  font-size:100%;
+  line-height: 1.5;
+}
+
+#boxContent{
+  margin:5px;
+}
+#extraOption{
+  float:right;
+}
+#nonEnglishOption{  
+  font-style: italic;
+  font-weight:normal;
+  font-size:12px;
+}
+
+#densityContainer{
+  padding: 1px;
+  font-size:100%;
+  line-height: 1.5;
+}
+
+#textbox{
+  width:99%;
+  height:450px;
+  border: 1px solid #999999;
+}
+#banner{
+  width:70%;
+  float:left;
+}
+#ad{
+  float:right;
+  display:none;
+}
+#logo{
+  float:left;
+  margin:0px;
+}
+#headerContainer{
+  position:relative;
+  margin-top:10px;
+}
+#brief_summary{
+  float:left;
+}
+#social{
+  float:right;
+}
+.percentage{
+  color:#777777;
+}
+.definition{
+  margin-bottom: 0px;
+}
+.firstList{
+  margin-top:0px;
+}
+label{
+  width:200px;
+}
+
+.clear{
+  clear:both;
+}
+
+#mainContent{
+  position: relative;	
+  height: 550px;
+  width: 100%;
+}
+
+#statistics{
+  float:right;
+  width:28%;
+  height:100%;
+}
+
+#stats{
+  margin-top:10px;
+  padding:5px;
+}
+
+.stat{
+  margin-bottom:12px;
+  font-size: 15px;
+  padding:2px;
+}
+.stat_label{
+  margin-right:5px;
+}
+.stat_con{
+  color: #FFFFFF;
+  background-color: #C43C35;
+  border-radius: 2px;
+  width:85px;
+  float:right;
+  padding:2px;
+}
+
+#topQuatity,#excluding{
+  margin-right:27px;
+}
+#description{
+  font-size:100%;
+  line-height: 1.5;
+  text-align:justify;
+  
+}
+#info{
+  width:46%;
+  float:left;
+}
+#definitionBox{
+  width:46%;
+}
+#description{
+  
+}
+#definitionBox{
+  float:right;
+}
+#contact{
+  margin:30px auto 10px auto;  
+}
+#addons{
+	margin:0px 5px; 
+	float:left;
+}
+#typeOption{
+	margin: 10px 10px;
+}
+#generate{
+	margin: 10px 10px;
+}
+.instruction{
+	padding:3px 10px;
+}
+#densityList{
+	padding-top:15px;
+}
+#densityList td{
+	padding-right:40px;
+}
+
+#keywordDensity{
+	width:48%;
+	float:left;
+}
+#myCanvasContainer{
+	width:48%;
+	float:right;		
+}
+#myCanvas{
+	margin:auto auto;
+}
+#tagList{
+	display:none;
+}
+#scoretable{
+	margin:5px auto;
+}
+table td{
+	padding:5px;
+}
+table th{
+	text-align:center;
+}
+#dale_chall_formula{
+	margin:10px auto;
+	display:block;
+	padding:5px;
+}
+
+#title{
+	font-family: sans-serif;
+	font-size: 30px;
+	color: #C43C35;
+	font-weight: bold;
+	line-height: 19px;
+}
+
+table.list3000{
+	font-family: Arial; 
+	font-size: 13px;
+	margin-bottom:10px;
+	width:100%;
+}
+.list3000 td{
+	vertical-align:top;
+	text-align:justify;
+	padding:10px;
+	width:15%;
+}
+#converter {
+	float:left;
+	margin:10px 0;
+}
+.convert{
+	margin-right:2px;
+}
+#htmlStrip{
+	float:right;
+	margin:10px 0;
+}
+#htmlStrip .convert{
+	margin-right:0;
+}
+#undoButton{
+
+  margin:0;
+}
