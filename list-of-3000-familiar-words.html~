@@ -361,7 +361,7 @@
 				 </tr> 
 			  </tbody> 
 			</table>
-			<br> <strong>X (0 words)</strong> 
+			<br> <strong>X (0 words)</strong> </td>
 			<table class="list3000"> 
 			</table>
 			<br> <strong>Y (22 words)</strong> 
@@ -376,9 +376,11 @@
 					<td>youth you've</td> 
 				 </tr> 
 			  </tbody> 
-			</table><br> <strong>Z (0 words)</strong>  
+			</table><br> <strong>Z (0 words)</strong> </td> 
 			<table class="list3000"> 
 			</table>
+	  </tr> 
+	</tbody></table>
   </div>
   <!--
   <div id="contact" class="clear">
