@@ -54,7 +54,7 @@ function displayWordStats(wordStats,withExtraStatistics){
 	  var numShortWords=wordStats['num_short_word']< MAX_NUMBER_TO_DISPLAY_PERCENTAGE_SIGN? 
 	  ""+wordStats['num_short_word']+" ("+wordStats['percentage_num_short_word']+"%)":""+wordStats['num_short_word'];	  
 	  $("#num_short_word").text(numShortWords);
-	  if(wordStats['num_word']<MAX_WORDS_TO_DISPLAY_UNIQUENESS||withExtraStatistics==true){
+	  if(wordStats['num_word']<MAX_WORDS_TO_DISPLAY_UNIQUENESS||withExtraStatistics){
 	    $("#unique_word_container").show();
 	    $("#showExtraStatistics").hide(); 
 	    var numUniqueWords=wordStats['num_unique_word']< MAX_NUMBER_TO_DISPLAY_PERCENTAGE_SIGN? 

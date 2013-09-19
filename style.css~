@@ -253,9 +253,10 @@ table.list3000{
 
   margin:0;
 }
-#footer{
-  background-color:red;
-  clear:both;
-  display:block;
-  margin:300px auto 10px auto; 
+#showExtraStatistics{
+  float:right;
+  font-style: italic;
+  font-weight:normal;
+  font-size:12px;
+  margin-top:15px;
 }

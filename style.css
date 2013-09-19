@@ -253,3 +253,11 @@ table.list3000{
 
   margin:0;
 }
+#showExtraStatistics{
+  float:right;
+  font-style: italic;
+  font-weight:normal;
+  font-size:12px;
+  display:none;
+  margin-top:15px;
+}

@@ -3,7 +3,7 @@
  * Free to use and modify. Please link back to our site - http://wordcounttools.com
  * Contact info: wordcounttools.com@gmail.com
  */ 
-var MAX_WORDS_TO_DISPLAY_UNIQUENESS=750;
+var MAX_WORDS_TO_DISPLAY_UNIQUENESS=1000;
 jQuery.wordCountTool = {  
 	getWordStats:function(text,withExtraStatistics){
 		

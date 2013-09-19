@@ -184,9 +184,9 @@
 			  <span class="stat_con"><label id="readability_level">&nbsp;</label></span>
 			</div>	
 			
-
-  			<span id="showExtraStatistics"><input type="button" id="extraStatisticsButton" value="Show number of unique words"/></span>		
-
+			<div class="stat">
+  			<span id="showExtraStatistics"><input type="button" id="extraStatisticsButton" value="Show number of Unique words"/></span>		
+			</div>
 		</div>
 	  </div>
 	  <div class="clear"></div>
