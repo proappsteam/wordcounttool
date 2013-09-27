@@ -11,7 +11,7 @@
  <link type="text/css" href="style.css" rel="stylesheet">
  <!--[if lt IE 9]><script type="text/javascript" src="./excanvas.js"></script><![endif]-->
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
- <script type="text/javascript" src="./jquery.wordstats.js"></script>
+ <script type="text/javascript" src="./jquery.wordstats.min.js"></script>
  <script type="text/javascript" src="./jquery.lorem.min.js"></script>
  <script type="text/javascript" src="./jquery.tagcanvas.min.js" ></script>
  <script type="text/javascript" src="./jquery.wordcounttool.js" ></script>
@@ -184,9 +184,9 @@
 			  <span class="stat_con"><label id="readability_level">&nbsp;</label></span>
 			</div>	
 			
-			<div class="stat">
-  			<span id="showExtraStatistics"><input type="button" id="extraStatisticsButton" value="Show number of Unique words"/></span>		
-			</div>
+
+  			<span id="showExtraStatistics"><input type="button" id="extraStatisticsButton" value="Show number of unique words"/></span>		
+
 		</div>
 	  </div>
 	  <div class="clear"></div>
