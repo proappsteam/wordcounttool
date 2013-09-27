@@ -274,11 +274,11 @@ function convertCaseForText(){
 	  text=text.replace(/\w[^.?!:\n]*[.?!:\n$]+/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 	  text=text.substr(0,text.length-1);
 	  break;
-	case "capitalizingEachwordCaseButton":
+	case "toTitleCaseButton":
 	  undoingText=text;
 	  text=text.toTitleCase();	  
 	  break;
-	case "toggleCaseButton":
+	case "toToggleCaseButton":
 	  undoingText=text;
 	  text=text.replace(/[\w]*/g, function(txt){return txt.charAt(0).toLowerCase() + txt.substr(1).toUpperCase();});
 	  break;
@@ -332,9 +332,14 @@ $(document).ready(function(){
   //Show number of unique words
   $("#extraStatisticsButton").click(updateStatsWithExtraStatistics);
   
-  
+  resizeHeightOfDefinitionBox();
+  $(window).resize(resizeHeightOfDefinitionBox);
 });
 
+function resizeHeightOfDefinitionBox(){
+  $("#definitionBox").height($("#infoBox").height());
+  $("#statistics").height($("#boxContainer").height());
+}
 /*
 function avoidEmptyStringList(list){
   if(list.length==1&&list[0]=="")

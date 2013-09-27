@@ -1,34 +1,30 @@
 *{ 
-  font-family: tahoma; 
+  font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
   font-size: 98%; 
 }
 #wrapper{
   width:99%;
   margin: 0px auto;
 }
-#counter {
-  color: #FFFFFF;
-  font-size: 27px;
-  background-color: #C43C35;
-  padding: 5px;
-  border-radius: 5px;
-}
+
 #readability{
   font-size: 14px;
-  color: #27F047;
+  color: #06FA2D;
 }
-.header{
-  background-color: #DAF7F6;
-  border-bottom:1px solid #009900;
-  margin:0;
-  padding:5px 10px;
-  font-weight:bold;
-}
+
 .box_container{
   border: 1px solid #009900;
   margin: 10px 0;
-  background-color: #eeffee;
   line-height: 1.5;
+  background-color: #fff;
+  -webkit-box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
+  box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 #generation{
   padding: 1px;
@@ -37,8 +33,11 @@
   line-height: 1.5;
   margin: 10px 0;
 }
-#boxContainer{
+#boxContainer, #randomTextGenerate{
   width:69%;
+}
+
+#boxContainer{  
   height:100%;
   float:left;
   font-size:100%;
@@ -51,11 +50,7 @@
 #extraOption{
   float:right;
 }
-#nonEnglishOption{  
-  font-style: italic;
-  font-weight:normal;
-  font-size:12px;
-}
+
 
 #densityContainer{
   padding: 1px;
@@ -109,7 +104,6 @@ label{
 
 #mainContent{
   position: relative;	
-  height: 550px;
   width: 100%;
 }
 
@@ -132,40 +126,16 @@ label{
 .stat_label{
   margin-right:5px;
 }
-.stat_con{
-  color: #FFFFFF;
-  background-color: #C43C35;
-  border-radius: 2px;
-  width:85px;
-  float:right;
-  padding:2px;
-}
 
-#topQuatity,#excluding{
-  margin-right:27px;
-}
+
+
 #description{
   font-size:100%;
   line-height: 1.5;
   text-align:justify;
   
 }
-#info{
-  width:46%;
-  float:left;
-}
-#definitionBox{
-  width:46%;
-}
-#description{
-  
-}
-#definitionBox{
-  float:right;
-}
-#contact{
-  margin:30px auto 10px auto;  
-}
+
 #addons{
 	margin:0px 5px; 
 	float:left;
@@ -173,12 +143,7 @@ label{
 #typeOption{
 	margin: 10px 10px;
 }
-#generate{
-	margin: 10px 10px;
-}
-.instruction{
-	padding:3px 10px;
-}
+
 #densityList{
 	padding-top:15px;
 }
@@ -260,4 +225,138 @@ table.list3000{
   font-size:12px;
   display:none;
   margin-top:15px;
+}
+#randomTextGenerate, #randomTextGenerate > span{
+  margin: 0 0;
+  padding: 0 0;     
+}
+#randomTextGenerate > span{  
+  float: left;
+}
+#randomTextGenerate *{
+  margin-top: 0; 
+}
+#amountOption{
+  margin-right: 0;
+  padding-right: 0;
+}
+#description{
+  position: relative;
+}
+
+#infoBox{
+  width:48%;
+  float:left;  
+  height: 100%;
+}
+#definitionBox{
+  width:48%;
+  float:right;
+  height: 100%;
+  display: inline-block;
+    vertical-align: top;
+}
+.instruction{
+  margin: 10px 5px 10px 10px;
+  text-align: justify;
+}
+#contact{
+  margin:10px auto 10px auto;  
+}
+
+.header:hover, input[type=button]:hover{
+  color:white;
+  background-color: #51a351;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+  font-weight: 700;  
+}
+
+.header, input[type=button] {
+  font-weight: 700;
+  font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif !important;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+}
+
+.header{
+  margin:0;
+  padding:5px 10px;
+  font-weight:bold;
+}
+#nonEnglishOption{  
+  font-style: italic;
+  font-weight: 500;
+}
+
+#topQuatity,#excluding, #viewWordCloud{
+  margin-right:26px;
+  padding:2px 5px;
+  font-weight: 450;
+  font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif !important;
+}
+
+#counter {
+  color: #FFFFFF;
+  font-size: 27px;  
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;  
+}
+.stat_con{
+  color: #FFFFFF;
+  width:85px;
+  float:right;
+  padding:2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+
+.notice{
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #E83B1C;
+  background-image: -moz-linear-gradient(top, #FA8C78, #D62D0F);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FA8C78), to(#D62D0F));
+  background-image: -webkit-linear-gradient(top, #FA8C78, #D62D0F);
+  background-image: -o-linear-gradient(top, #FA8C78, #D62D0F);
+  background-image: linear-gradient(to bottom, #FA8C78, #D62D0F);
+  background-repeat: repeat-x;
+  border-color: #D62D0F #D62D0F #D62D0F;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffFA8C78', endColorstr='#ffD62D0F', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
+  box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
+
+}
+
+.notice:hover{
+  color:white;
+  background-color: #D62D0F;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
 }

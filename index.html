@@ -46,7 +46,7 @@
   <div class="clear"></div>
   <div id="headerContainer">
     <div id="brief_summary">
-      <p id="counter">0 words, 0 characters.</p>
+      <p id="counter" class="notice">0 words, 0 characters.</p>
     </div>  
     <div id="social">
     <!--addons-->
@@ -107,81 +107,81 @@
 				<span class="convert"><input type="button" id="toUpperCaseButton" value="UPPER CASE"/></span>
 				<span class="convert"><input type="button" id="toLowerCaseButton" value="lower case"/></span>
 				<span class="convert"><input type="button" id="toSentenceCaseButton" value="Sentence case"/></span>
-				<span class="convert"><input type="button" id="capitalizingEachwordCaseButton" value="Capitalize Words"/></span>
-				<span class="convert"><input type="button" id="toggleCaseButton" value="tOGGLE cASE"/></span>
+				<span class="convert"><input type="button" id="toTitleCaseButton" value="Title Case"/></span>
+				<span class="convert"><input type="button" id="toToggleCaseButton" value="tOGGLE cASE"/></span>
 			</div>
 			<div id="htmlStrip">
 				<span class="convert"><input type="button" id="htmlStripButton" value="Strip HTML"/></span>
 				<span class="convert"><input type="button" id="clearTextButton" value="Clear"/></span>
 				<span class="convert"><input type="button" id="undoButton" value="Undo"></span>				
-			</div>
+			</div>				
 		</div>
- 	  </div>
-    </div>    
-
+	   </div>
+ 	 </div>
+ 	 	
     <div id="statistics" class="box_container">
 		<div class="header">Word Count Statistics		  	
 		</div>
 		<div id="stats">
 			<div class="stat">
 		      <span class="stat_label"><label>Number of words </label></span>
-		  	  <span class="stat_con"><label id="num_word">&nbsp;</label></span>
+		  	  <span class="stat_con notice"><label id="num_word">&nbsp;</label></span>
 			</div>			
 			
 			<div class="stat">
 		      <span class="stat_label"><label>Number of characters </label></span>
-		  	  <span class="stat_con"><label id="num_character">&nbsp;</label></span>
+		  	  <span class="stat_con notice"><label id="num_character">&nbsp;</label></span>
 		    </div>
 
       <div class="stat">
 		      <span class="stat_label"><label>Number of Difficult Words </label></span>
-		  	  <span class="stat_con"><label id="num_difficult_word">&nbsp;</label></span>
+		  	  <span class="stat_con notice"><label id="num_difficult_word">&nbsp;</label></span>
 			</div>
 			
 			<div class="stat" id="unique_word_container">
 		      <span class="stat_label"><label>Unique Words </label></span>
-		  	  <span class="stat_con"><label id="num_unique_word">&nbsp;</label></span>
+		  	  <span class="stat_con notice"><label id="num_unique_word">&nbsp;</label></span>
 			</div>
 			
 			<div class="stat">
 		      <span class="stat_label"><label>Short Words (< 5 characters) </label></span>
-		  	  <span class="stat_con"><label id="num_short_word">&nbsp;</label></span>
+		  	  <span class="stat_con notice"><label id="num_short_word">&nbsp;</label></span>
 			</div>
 			
 			
 			<div class="stat">
 		      <span class="stat_label"><label>Characters without spaces </label></span>
-		      <span class="stat_con"><label id="num_character_wo_spaces">&nbsp;</label></span>    
+		      <span class="stat_con notice"><label id="num_character_wo_spaces">&nbsp;</label></span>    
 		    </div>
 		
 			<div class="stat">
 		      <span class="stat_label"><label>Number of sentences </label></span>
-		      <span class="stat_con"><label id="num_sentence">&nbsp;</label></span>   
+		      <span class="stat_con notice"><label id="num_sentence">&nbsp;</label></span>   
 		    </div>
 	
 			<div class="stat">
 		      <span class="stat_label"><label>Number of paragraphs </label></span>
-			  <span class="stat_con"><label id="num_paragraph">&nbsp;</label></span>
+			  <span class="stat_con notice"><label id="num_paragraph">&nbsp;</label></span>
 			</div>
 		
 			<div class="stat">
 		      <span class="stat_label"><label>Average Word Length </label></span>
-			  <span class="stat_con"><label id="avg_word_length">&nbsp;</label></span>
+			  <span class="stat_con notice"><label id="avg_word_length">&nbsp;</label></span>
 			</div>
 		
 			<div class="stat">
 		      <span class="stat_label"><label>Average Sentence Length </label></span>
-			  <span class="stat_con"><label id="avg_sentence_length">&nbsp;</label></span>
+			  <span class="stat_con notice"><label id="avg_sentence_length">&nbsp;</label></span>
 			</div>			
 			
 			<div class="stat">
 		      <span class="stat_label"><label>Dale-Chall Readability Score </label></span>
-			  <span class="stat_con"><label id="dale_chall_readability">&nbsp;</label></span>
+			  <span class="stat_con notice"><label id="dale_chall_readability">&nbsp;</label></span>
 			</div>
 			
 			<div class="stat">
 		      <span class="stat_label"><label>Readability level </label></span>
-			  <span class="stat_con"><label id="readability_level">&nbsp;</label></span>
+			  <span class="stat_con notice"><label id="readability_level">&nbsp;</label></span>
 			</div>	
 			
 
@@ -190,8 +190,21 @@
 		</div>
 	  </div>
 	  <div class="clear"></div>
-  </div>
-  
+  </div>  			
+<!--
+  <div id="randomTextGenerate">
+  				<span>
+				<input type="button" value="Random Text Generate" id="generate">
+				<select id="typeOption">
+					<option value="paragraphs">Paragraphs</option>
+					<option value="words" selected="selected">Words</option>
+					<option value="characters">Characters</option>
+				</select>
+				<span id="amount">Amount</span>
+				<input type="text" size=4 value="250" id="amountOption">				
+				</span>
+   </div>	
+ -->
 
   <div class="clear"></div>
 
@@ -201,9 +214,9 @@
 	<div class="header">Keyword Density Statistics</div>
 	<div id="keywordDensity">    
 	    <div class="instruction">
-		  <span id="topQuatity">Top <input type="text" size=2 value="10" id="numTopKeyWord"> words</span>
-	      <span id="excluding"><input type="checkbox" id="excludingCheckbox" checked/>Excluding grammar words</span>
-		  <span id="viewWordCloud"><input type="checkbox" id="viewWordCloudCheckbox"/>View Word Cloud</span>
+		  <span id="topQuatity" class="notice">Top <input type="text" size=2 value="10" id="numTopKeyWord"> words</span>
+	      <span id="excluding" class="notice"><input type="checkbox" id="excludingCheckbox" checked/>Excluding grammar words</span>
+		  <span id="viewWordCloud" class="notice"><input type="checkbox" id="viewWordCloudCheckbox"/>View Word Cloud</span>
 	      <span id="topDensity"></span>
 	    </div>		
 	</div>
@@ -219,23 +232,9 @@
   </div>
 
   <div class="clear"></div>
-  <div id="generation" class="box_container">
-  <div class="header">Random text generator (Lorem Ipsum Generator)</div>
-  <div class="instruction">Please choose the type of text generation you want</div>
-  <select id="typeOption">
-    <option value="paragraphs">Paragraphs</option>
-    <option value="words" selected="selected">Words</option>
-    <option value="characters">Characters</option>
-  </select>
-  <span id="amount">Amount</span>
-  	<input type="text" size=4 value="250" id="amountOption">
-  	<input type="button" value="Generate" id="generate">
-  </div>
 
-  <div class="clear"></div>
-
-  <div id="description" class="box_container"> 
-	<div id="info">
+  <div id="description"> 
+	<div id="infoBox" class="box_container">
     	<h1 class="header">Word Count Tool</h1> 
 		<div class="instruction">
 	      Word Count Tool is a handy and reliable word counter tool that counts the number of words, sentences, paragraphs.... It works with English and non-English text. This tool counts instantly as you type and gives you an extensive report about the readability and keyword density of the text. It also includes some extra features that you might find useful, such as case changing, stripping out HTML tags...  Everything is done without any extra click. 
@@ -284,14 +283,13 @@
 		</tr>
 		</table>
 		</div>
-	</div>
-	
-	<div id="definitionBox">
+	</div>	
+	<div id="definitionBox" class="box_container">
 		<h1 class="header">Definition</h1> 
 		<div class="instruction">
 	    	<h4 class="definition firstList">What is counted as a word?</h4>
 		A consecutive sequence of printable alphabet letters, numeric letters, hyphens, and markers.
-			<h4 class="definition firstList">What is counted as a difficult word?</h4>
+			<h4 class="definition">What is counted as a difficult word?</h4>
 		A word that falls outside the list of <a href="./list-of-3000-familiar-words.html">3000 familiar words</a>.
 		    <h4 class="definition">What is counted as a character?</h4>
 		Any printable and non-printable characters. Non-printable are trimmed if they are at the beginning or at the end of the text.
@@ -305,13 +303,11 @@
 		The quotient of the number of words over the number of sentences.
 		</div>
 	</div>
-	
-	<div class="clear"></div>
-  </div>
-  
+	<div class="clear"></div>	
+  </div>  
 
   <div id="contact" class="clear">
-  Please do not hesitate to <a href="mailto:wordcounttools.com@gmail.com">contact us</a> about any doubt or to give feedback or suggestion you might have regarding to <a href="http://wordcounttools.com">Word Count Tool</a>.
+  Copyright &copy; 2013 <a href="http://wordcounttools.com">Word Count Tool</a>. Contact us via <a href="mailto:wordcounttools.com@gmail.com">email</a>.
   </div>
   </div>
   <!--Google Analytics-->
