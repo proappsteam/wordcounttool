@@ -8,5 +8,7 @@ Online at [Syllable Counter](http://wordcounttools.com)/ [Word Counter](http://w
 Embed code: [Word Count Embed](http://jsfiddle.net/harryngh/t20k5jL8/)
 
 Other products: 
+
 [Image Resizer Tool](http://imageresizertool.com)
+
 [Emoji Keyboard](http://emojikeyboard.org)
